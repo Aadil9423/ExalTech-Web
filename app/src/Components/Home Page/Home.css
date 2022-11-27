@@ -3,12 +3,12 @@ padding: 0;
 margin: 0;
 background-color: white;
 }
-img{
+.img{
     height: 70vh;
     display: flex;
     float: right;
     /* padding: 50px; */
-  margin: 50px 40px 0px 20px;
+  margin: 80px 40px 0px 20px;
     
     
 }
@@ -24,11 +24,15 @@ span{
 .col1{
     
     font-size: 60px;
-    margin-top: 00px;
+   
    padding-top: 200px;
    
 }
 .col2{
     margin-top: 20px;
     margin-bottom: 20px;
+  
+}
+.col3{
+    font-size: 20px;
 }

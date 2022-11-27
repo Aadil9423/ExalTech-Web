@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiYoutube, FiFacebook, FiInstagram } from "react-icons/fi";
 import "./NaveBar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 const NaveBar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
@@ -18,10 +18,25 @@ const NaveBar = () => {
         <div
           className={
             showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }>
+          }
+        >
           <ul>
             <li>
-              <a href="">Home</a>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+          {/* <ul>
+            <li>
+              <a to="/">Home</a>
             </li>
             <li>
               <a href="">About</a>
@@ -32,29 +47,29 @@ const NaveBar = () => {
             <li>
               <a href="">Contact</a>
             </li>
-          </ul>
+          </ul> */}
         </div>
-        <div className="social-media">
+        {/* <div className="social-media">
           <ul className="social-media-dsktop">
             <li>
-              <a href="#">
+              <a>
                 <FiYoutube className="youtube" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a>
                 <FiFacebook className="facebook" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a>
                 <FiInstagram className="instagram" />
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="hamburger-menu">
-          <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+          <a onClick={() => setShowMediaIcons(!showMediaIcons)}>
             <GiHamburgerMenu />
           </a>
         </div>

@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import Typical from "react-typical";
 
+
 const Home = () => {
   return (
     <div>
@@ -9,6 +10,7 @@ const Home = () => {
       <img
         src="https://cdn.dribbble.com/users/4781516/screenshots/10796279/media/04eb24250e23400dc0162080a231b70c.gif"
         alt=""
+        className="img"
       />
       <div className="div1">
         <h1 className="col1">
@@ -21,7 +23,7 @@ const Home = () => {
         <h1 className="col2">
           Web <span>Deyelopment</span> Course
         </h1>
-        <p>
+        <p className="col3">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
           cupiditate autem in culpa vero laborum libero ex beatae quibusdam
           consequatur.
